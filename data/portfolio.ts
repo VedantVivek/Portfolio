@@ -201,7 +201,7 @@ export const featuredProjects = [
     ],
     github: "https://github.com/VedantVivek/localestate-playwright-tests",
     liveDemo: "",
-    images: [] as string[],
+    images: ["/projects/localestate-tests/repo.png", "/projects/localestate-tests/ci.png"],
   },
   {
     tier: "primary" as const,
@@ -256,8 +256,8 @@ export const featuredProjects = [
       "An AI-assisted requirements drafting assistant with a human review gate, so model output is checked by a person before it is used.",
     technologies: ["Next.js", "TypeScript", "Anthropic SDK", "Tailwind CSS"],
     github: "https://github.com/VedantVivek/nexora-requirements-assistant",
-    liveDemo: "",
-    images: [] as string[],
+    liveDemo: "https://nexora-requirements-assistant.vercel.app",
+    images: ["/projects/nexora/home.png"],
   },
   {
     tier: "secondary" as const,
