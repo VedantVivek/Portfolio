@@ -270,7 +270,7 @@ export const featuredProjects = [
     technologies: ["Next.js", "TypeScript", "Recharts", "Tailwind CSS"],
     github: "https://github.com/VedantVivek/churnlens",
     liveDemo: "https://churnlens-mzc5.vercel.app",
-    images: ["/projects/churnlens/home.png", "/projects/churnlens/dashboard.png"],
+    images: ["/projects/churnlens/home.png", "/projects/churnlens/insights.png"],
   },
 ];
 
