@@ -22,8 +22,6 @@ import {
 type Project = (typeof featuredProjects)[number];
 
 export default function Projects() {
-  const primary = featuredProjects.find((p) => p.tier === "primary");
-  const secondary = featuredProjects.find((p) => p.tier === "secondary");
 
   return (
     <section
@@ -43,8 +41,7 @@ export default function Projects() {
         </Reveal>
 
         <div className="mt-14 space-y-10 lg:space-y-12">
-          {primary ? <PrimaryProject project={primary} /> : null}
-          {secondary ? <PrimaryProject project={secondary} /> : null}
+          {featuredProjects.map((project) => (<PrimaryProject key={project.title} project={project} />))}
         </div>
       </Container>
     </section>
