@@ -262,15 +262,15 @@ export const featuredProjects = [
   {
     tier: "secondary" as const,
     title: "Churnlens",
-    tagline: "An AI-assisted customer churn intelligence platform.",
-    category: "AI-Assisted Tool",
+    tagline: "Finds where users drop off between signup and churn.",
+    category: "Analytics Product",
     status: "Individual Project",
     description:
-      "An AI-assisted customer churn intelligence platform for analysing customer churn.",
+      "Tracks the whole journey from signup to churn, shows where users drop off, and sketches what an A/B test to fix it might look like. Built on 100% synthetic data for demonstration.",
     technologies: ["Next.js", "TypeScript", "Recharts", "Tailwind CSS"],
     github: "https://github.com/VedantVivek/churnlens",
-    liveDemo: "",
-    images: [] as string[],
+    liveDemo: "https://churnlens-mzc5.vercel.app",
+    images: ["/projects/churnlens/home.png", "/projects/churnlens/dashboard.png"],
   },
 ];
 
