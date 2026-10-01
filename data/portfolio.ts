@@ -253,7 +253,7 @@ export const featuredProjects = [
     category: "AI-Assisted Tool",
     status: "Individual Project",
     description:
-      "An AI-assisted requirements drafting assistant with a human review gate, so model output is checked by a person before it is used.",
+      "Drop in a stakeholder call transcript and it drafts a scope statement and user stories. Nothing goes to the backlog until a BA has reviewed and signed off on it.",
     technologies: ["Next.js", "TypeScript", "Anthropic SDK", "Tailwind CSS"],
     github: "https://github.com/VedantVivek/nexora-requirements-assistant",
     liveDemo: "https://nexora-requirements-assistant.vercel.app",
