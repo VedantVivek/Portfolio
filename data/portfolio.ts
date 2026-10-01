@@ -201,7 +201,7 @@ export const featuredProjects = [
     ],
     github: "https://github.com/VedantVivek/localestate-playwright-tests",
     liveDemo: "",
-    images: ["/projects/localestate-tests/repo.png", "/projects/localestate-tests/ci.png"],
+    images: ["/projects/localestate-tests/report.png", "/projects/localestate-tests/known-bugs.png"],
   },
   {
     tier: "primary" as const,
