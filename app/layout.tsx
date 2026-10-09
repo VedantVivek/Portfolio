@@ -22,23 +22,29 @@ const plexMono = IBM_Plex_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Vedant Vivek | Software Quality Engineer & Full-Stack Developer",
+  title: "Vedant Vivek | SDET & Full-Stack Software Engineer",
   description:
-    "Portfolio of Vedant Vivek, specializing in QA automation, Playwright, Selenium, API testing, TypeScript, Python, Next.js, and full-stack development.",
+    "SDET and full-stack engineer building Playwright and TypeScript test automation, API testing, CI/CD with Docker and AI-assisted testing, plus Next.js apps.",
   keywords: [
     "Vedant Vivek",
     "Software Quality Engineer",
     "SDET",
-    "QA Automation Engineer",
+    "Test Automation Engineer",
+    "Software Development Engineer in Test",
+    "Software Engineer",
+    "AI-Assisted Testing",
+    "API Testing",
+    "CI/CD",
+    "Docker",
     "Playwright",
     "Selenium",
     "TypeScript",
     "Next.js",
   ],
   openGraph: {
-    title: "Vedant Vivek | Software Quality Engineer & Full-Stack Developer",
+    title: "Vedant Vivek | SDET & Full-Stack Software Engineer",
     description:
-      "Portfolio of Vedant Vivek, specializing in QA automation, Playwright, Selenium, API testing, TypeScript, Python, Next.js, and full-stack development.",
+      "SDET and full-stack engineer building Playwright and TypeScript test automation, API testing, CI/CD with Docker and AI-assisted testing, plus Next.js apps.",
     type: "website",
   },
 };

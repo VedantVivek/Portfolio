@@ -35,8 +35,7 @@ export default function Projects() {
             Things I shipped
           </h2>
           <p className="mt-4 max-w-2xl text-lg leading-8 text-text-secondary">
-            Full-stack and frontend work alongside the quality engineering
-            focus.
+            Test automation and full-stack products, built end to end.
           </p>
         </Reveal>
 
