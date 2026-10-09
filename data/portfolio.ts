@@ -1,16 +1,16 @@
 export const personalInfo = {
   name: "Vedant Vivek",
 
-  subtitle: "Software Quality Engineer — Test Automation & API Reliability",
+  subtitle: "Software Quality Engineer — Test Automation, APIs & AI-Assisted Testing",
 
   oneLiner:
-    "I build automated testing systems that catch defects before they reach production.",
+    "I build automated and AI-assisted testing systems that catch defects before they reach production.",
 
   introduction:
-    "Software Quality Engineer at Zinnia, where I design automated testing frameworks for insurance-technology platforms. I've cut manual validation effort by 50% with an API regression suite spanning 10+ REST endpoints, and built a validation engine that checks 900+ UI fields against live data. I also build full-stack applications with Next.js and TypeScript.",
+    "Software Quality Engineer at Zinnia, where I build Playwright + TypeScript automation for enterprise platforms: a framework that executes 700+ Excel-driven scenarios across 4 domains, plus an LLM-assisted self-healing layer that keeps tests resilient to UI changes. I run these suites through CI with Jenkins, GitHub Actions and Docker, and I build full-stack applications with Next.js and TypeScript.",
 
   about:
-    "I've worked both sides of the release cycle — writing requirements as a BA, then proving they hold up as a QA engineer. That means I test with business context in mind, not just a checklist. What I enjoy most is designing a framework once and watching it validate hundreds of scenarios reliably.",
+    "I've worked both sides of the release cycle — writing requirements as a BA, then proving they hold up as an SDET. That means I test where the risk actually is, from APIs to UI flows, and I build frameworks that run in CI, report clearly and stay stable as the product changes. What I enjoy most is designing a framework once and watching it validate hundreds of scenarios reliably.",
 
   email: "vedantvivek496@gmail.com",
   phone: "+91-8279544936",
@@ -30,24 +30,24 @@ export const personalInfo = {
 
 export const portfolioStats = [
   {
+    value: 700,
+    suffix: "+",
+    label: "Excel-driven scenarios across 4 domains",
+  },
+  {
+    value: 645,
+    suffix: "",
+    label: "Generated forms validated against spec",
+  },
+  {
+    value: 167,
+    suffix: "",
+    label: "Learned mappings captured by the self-healing layer",
+  },
+  {
     value: 50,
-    suffix: "%",
-    label: "Reduction in manual validation effort",
-  },
-  {
-    value: 10,
     suffix: "+",
-    label: "REST endpoints under automated regression",
-  },
-  {
-    value: 900,
-    suffix: "+",
-    label: "UI fields validated across insurance carriers",
-  },
-  {
-    value: 3,
-    suffix: "+",
-    label: "Browser environments in cross-browser regression",
+    label: "Automated runs published to Allure and dashboards",
   },
 ];
 
@@ -61,17 +61,16 @@ export const experiences = [
     technologies: [
       "Playwright",
       "TypeScript",
-      "Selenium",
-      "Python",
-      "Postman",
+      "Jenkins",
+      "Allure",
       "REST APIs",
-      "SQL",
-      "JIRA",
+      "AI-Assisted Testing",
     ],
     achievements: [
-      "Built an automated API regression framework covering 10+ REST endpoints — validating auth, payload integrity, and business-critical workflows — cutting manual validation effort by 50%.",
-      "Designed a spec-driven validation engine in Playwright/TypeScript that parses Excel-based conditional rules to check 900+ UI fields against live carrier data.",
-      "Automated cross-browser UI regression in Selenium/Python across 3+ browser environments, strengthening release confidence.",
+      "Architected a modular Playwright-TypeScript framework executing 700+ Excel-driven scenarios across 4 domains, integrated with Jenkins for on-demand regression testing.",
+      "Automated SAML SSO, OAuth, and multi-step API authentication workflows, validating end-to-end transaction lifecycles, status updates, and document generation.",
+      "Designed a reusable rule-based field-mapping engine spanning 15+ domains with persistent learning and LLM-assisted self-healing fallback, accumulating 167 learned mappings to improve UI-change resilience.",
+      "Engineered automated spec-compliance validation across 645 generated forms and 29 UAT transactions, with discrepancy detection, field-level auditing and Allure/dashboard reporting across 50+ runs.",
     ],
   },
   {
@@ -80,72 +79,58 @@ export const experiences = [
     role: "Business Analyst Intern",
     period: "Jan 2026–Jun 2026",
     type: "Internship",
-    technologies: [
-      "SQL",
-      "Postman",
-      "REST APIs",
-      "JIRA",
-      "Confluence",
-      "Apache JMeter",
-    ],
+    technologies: ["SQL", "Postman", "REST APIs", "Apache JMeter"],
     achievements: [
-      "Wrote user stories and acceptance criteria for 8+ enhancements, removing requirement ambiguity before development.",
-      "Validated business requirements across 15+ API endpoints with Postman/SQL and ran JMeter load tests ahead of UAT.",
+      "Partnered with business and product teams to translate strategic requirements into 8+ actionable product enhancements, accelerating development readiness and cutting requirement ambiguity by aligning scope upfront.",
+      "Drove cross-functional alignment with product owners and stakeholders across 3+ sprint releases, prioritizing initiatives against business goals and driving them to on-time delivery.",
+      "Collaborated with QA to validate requirements across 15+ API endpoints using Postman and SQL, with Apache JMeter used for performance validation ahead of UAT.",
     ],
   },
 ];
 
 export const caseStudies = [
   {
-    id: "api-regression",
-    title: "API Regression Framework",
-    // TODO: add case study context — problem statement from Vedant
+    id: "playwright-framework",
+    title: "Playwright Test Framework",
     problem: null as string | null,
     action:
-      "Built an automated API regression framework covering 10+ REST endpoints — validating auth, payload integrity, and business-critical workflows.",
-    tech: ["Postman", "REST APIs", "TypeScript", "JIRA"],
-    resultValue: "50%",
-    resultLabel: "Reduction in manual validation effort",
-    // TODO: add individual vs team contribution note from Vedant
+      "Architected a modular Playwright-TypeScript framework executing 700+ Excel-driven scenarios across 4 domains, integrated with Jenkins for on-demand regression testing.",
+    tech: ["Playwright", "TypeScript", "Jenkins"],
+    resultValue: "700+",
+    resultLabel: "Excel-driven scenarios across 4 domains",
     role: null as string | null,
   },
   {
-    id: "field-validation",
-    title: "900+ Field Validation Engine",
-    // TODO: add case study context — problem statement from Vedant
+    id: "self-healing",
+    title: "Self-Healing Field Mapping",
     problem: null as string | null,
     action:
-      "Designed a spec-driven validation engine in Playwright/TypeScript that parses Excel-based conditional rules to check 900+ UI fields against live carrier data.",
-    tech: ["Playwright", "TypeScript", "Excel Rules", "SQL"],
-    resultValue: "900+",
-    resultLabel: "UI fields validated against live data",
-    // TODO: add individual vs team contribution note from Vedant
+      "Designed a reusable rule-based field-mapping engine spanning 15+ domains with persistent learning and LLM-assisted self-healing fallback to improve UI-change resilience.",
+    tech: ["TypeScript", "Playwright", "LLM"],
+    resultValue: "167",
+    resultLabel: "Learned mappings captured",
     role: null as string | null,
   },
   {
-    id: "cross-browser",
-    title: "Cross-Browser UI Regression",
-    // TODO: add case study context — problem statement from Vedant
+    id: "spec-compliance",
+    title: "Spec-Compliance Validation",
     problem: null as string | null,
     action:
-      "Automated cross-browser UI regression in Selenium/Python across 3+ browser environments, strengthening release confidence.",
-    tech: ["Selenium", "Python", "Cross-Browser Testing"],
-    resultValue: "3+",
-    resultLabel: "Browser environments covered",
-    // TODO: add individual vs team contribution note from Vedant
+      "Engineered automated spec-compliance validation across 645 generated forms and 29 UAT transactions, with discrepancy detection, field-level auditing and Allure/dashboard reporting across 50+ runs.",
+    tech: ["Playwright", "TypeScript", "Allure"],
+    resultValue: "645",
+    resultLabel: "Generated forms validated against spec",
     role: null as string | null,
   },
   {
     id: "ba-impact",
     title: "BA Internship Impact",
-    // TODO: add case study context — problem statement from Vedant
     problem: null as string | null,
     action:
-      "Wrote user stories and acceptance criteria for 8+ enhancements, validated requirements across 15+ API endpoints with Postman/SQL, and ran JMeter load tests ahead of UAT.",
-    tech: ["JIRA", "Confluence", "Postman", "SQL", "Apache JMeter"],
+      "Translated strategic requirements into 8+ product enhancements and validated requirements across 15+ API endpoints with Postman and SQL, with Apache JMeter for performance validation ahead of UAT.",
+    tech: ["SQL", "Postman", "REST APIs", "Apache JMeter"],
     resultValue: "15+",
     resultLabel: "API endpoints validated before UAT",
-    // TODO: add individual vs team contribution note from Vedant
     role: null as string | null,
   },
 ];
@@ -157,12 +142,12 @@ export const skillCategories = [
       "Playwright",
       "Selenium",
       "Postman",
-      "REST Assured",
-      "TestNG",
       "API Testing",
       "UI Testing",
       "Regression Testing",
       "Data-Driven Testing",
+      "Page Object Model",
+      "AI-Assisted Testing",
     ],
   },
   {
@@ -171,32 +156,68 @@ export const skillCategories = [
   },
   {
     title: "Development",
-    skills: ["Next.js", "React.js", "Node.js", "Express.js", "REST APIs"],
+    skills: [
+      "Next.js",
+      "React.js",
+      "Node.js",
+      "Express.js",
+      "MongoDB",
+      "REST APIs",
+    ],
   },
   {
     title: "Tools & Process",
-    skills: ["JIRA", "Git/GitHub", "Apache JMeter", "Agile/Scrum"],
+    skills: [
+      "Jenkins",
+      "GitHub Actions",
+      "CI/CD",
+      "Docker",
+      "Allure",
+      "JIRA",
+      "Git/GitHub",
+      "Apache JMeter",
+      "Agile/Scrum",
+    ],
   },
   {
     title: "Data & Analytics",
-    skills: ["Power BI", "DAX", "MongoDB"],
+    skills: ["Power BI", "DAX", "Power Query"],
   },
 ];
 
 export const featuredProjects = [
   {
     tier: "primary" as const,
-    title: "Event Finder",
+    title: "LocalEstate Playwright Tests",
+    tagline:
+      "A public Playwright + TypeScript test suite for my LocalEstate app, running in GitHub Actions CI and Docker.",
+    category: "Test Automation",
+    status: "Individual Project",
+    description:
+      "24 UI and API tests with Page Objects, custom fixtures and shared test data, running on every push and pull request through GitHub Actions and in a Docker container. While building it, I found 2 real bugs in the mortgage API and reported them as GitHub issues with repro steps and root cause.",
+    technologies: [
+      "Playwright",
+      "TypeScript",
+      "GitHub Actions",
+      "Page Object Model",
+      "Docker",
+    ],
+    github: "https://github.com/VedantVivek/localestate-playwright-tests",
+    liveDemo: "",
+    images: ["/projects/localestate-tests/report.png", "/projects/localestate-tests/known-bugs.png"],
+  },
+  {
+    tier: "primary" as const,
+    title: "Event Dazzle",
     tagline:
       "A full-stack event discovery platform with secure auth and end-to-end payment-integrated booking.",
     category: "Full-Stack Product",
     status: "Individual Project",
     description:
-      "A full-stack event discovery and ticket-booking platform that allows users to discover location-based events, authenticate securely, explore event details, and complete ticket payments through one connected experience.",
-    technologies: ["Next.js", "TypeScript", "MongoDB", "Clerk", "Stripe"],
-    // TODO: confirm live demo URL when available
+      "A full-stack event booking platform integrating Ticketmaster, Bushdrum and Stripe APIs across 7 Indian cities, with 3-tier zone-based tickets, UPI payments and email OTP authentication.",
+    technologies: ["Next.js", "TypeScript", "MongoDB", "Clerk", "Email OTP", "Stripe"],
     github: "https://github.com/VedantVivek/Event_Finder",
-    liveDemo: "",
+    liveDemo: "https://event-finder-dusky.vercel.app",
     images: [
       "/projects/event-finder/01-home.png",
       "/projects/event-finder/02-events-listing.png",
@@ -214,10 +235,10 @@ export const featuredProjects = [
     category: "Full-Stack Product",
     status: "Individual Project",
     description:
-      "A full-stack neighborhood real-estate app with auth, property search and filters, match scores, favorites, compare homes, tour booking, mortgage calculator, and contact/newsletter flows.",
-    technologies: ["JavaScript", "HTML", "CSS", "Express", "Node.js"],
+      "A full-stack neighborhood real-estate app with auth, property search and filters, match scores, favorites, compare homes, tour booking, mortgage calculator, and contact/newsletter flows, backed by a 10-endpoint Express REST API and MongoDB.",
+    technologies: ["JavaScript", "Node.js", "Express", "MongoDB", "REST APIs"],
     github: "https://github.com/VedantVivek/localEstate",
-    liveDemo: "",
+    liveDemo: "https://local-estate-main.vercel.app",
     images: [
       "/projects/localestate/popular1.jpg",
       "/projects/localestate/popular2.jpg",
@@ -226,6 +247,33 @@ export const featuredProjects = [
       "/projects/localestate/value.jpg",
       "/projects/localestate/contact.png",
     ],
+  },
+  {
+    tier: "secondary" as const,
+    title: "Nexora Requirements Assistant",
+    tagline:
+      "An AI-assisted requirements drafting assistant with a human review gate.",
+    category: "AI-Assisted Tool",
+    status: "Individual Project",
+    description:
+      "Drop in a stakeholder call transcript and it drafts a scope statement and user stories. Nothing goes to the backlog until a BA has reviewed and signed off on it.",
+    technologies: ["Next.js", "TypeScript", "Anthropic SDK", "Tailwind CSS"],
+    github: "https://github.com/VedantVivek/nexora-requirements-assistant",
+    liveDemo: "https://nexora-requirements-assistant.vercel.app",
+    images: ["/projects/nexora/home.png"],
+  },
+  {
+    tier: "secondary" as const,
+    title: "Churnlens",
+    tagline: "Finds where users drop off between signup and churn.",
+    category: "Analytics Product",
+    status: "Individual Project",
+    description:
+      "Tracks the whole journey from signup to churn, shows where users drop off, and sketches what an A/B test to fix it might look like. Built on 100% synthetic data for demonstration.",
+    technologies: ["Next.js", "TypeScript", "Recharts", "Tailwind CSS"],
+    github: "https://github.com/VedantVivek/churnlens",
+    liveDemo: "https://churnlens-mzc5.vercel.app",
+    images: ["/projects/churnlens/home.png", "/projects/churnlens/insights.png"],
   },
 ];
 
@@ -272,7 +320,7 @@ export const moreProjects = [
     technologies: ["Power BI", "Power Query", "DAX", "Data Modeling"],
     image: "/projects/blinkit-dashboard/dashboard.png",
     images: ["/projects/blinkit-dashboard/dashboard.png"],
-    github: "https://github.com/VedantVivek/Blink-It-Dashboard-",
+    github: "https://github.com/VedantVivek/Blink-It-Dashboard",
   },
   {
     title: "Zepto Sales Analysis",
@@ -294,7 +342,7 @@ export const credentials = {
         "Bachelor of Technology in Electronics and Communication",
       period: "2022 – 2026",
       location: "Noida",
-      score: "CGPA: 8.00 / 10",
+      score: "CGPA: 7.96 / 10",
     },
     {
       institution: "St. Joseph's School",
@@ -319,7 +367,6 @@ export const credentials = {
       ],
       credential: "Professional Certificate",
       image: "/certificates/cisco.png",
-      // TODO: add certificate verification link
       link: "",
     },
     {
@@ -336,7 +383,6 @@ export const credentials = {
       ],
       credential: "Virtual Experience Program",
       image: "/certificates/deloitte.png",
-      // TODO: add certificate verification link
       link: "",
     },
   ],
@@ -357,13 +403,13 @@ export const credentials = {
 };
 
 export const contactInfo = {
-  heading: "Let's talk about quality engineering roles.",
+  heading: "Let's talk about SDET and software engineering roles.",
   description:
-    "Open to full-time Software Quality Engineer, SDET, and QA Automation opportunities. Email is fastest — include the role, stack, and what reliability means for your team.",
+    "Open to full-time SDET, Software Quality Engineer, and Software Engineer opportunities. Email is fastest — include the role, stack, and what reliability means for your team.",
   email: "vedantvivek496@gmail.com",
   phone: "+91-8279544936",
   location: "Noida, Uttar Pradesh, India",
-  availability: "Open to Full-Time Software Quality Engineering Opportunities",
+  availability: "Open to Full-Time SDET and Software Engineering Opportunities",
   socials: {
     github: "https://github.com/VedantVivek",
     linkedin: "https://www.linkedin.com/in/vedant-vivek-2063aa279/",

@@ -22,8 +22,6 @@ import {
 type Project = (typeof featuredProjects)[number];
 
 export default function Projects() {
-  const primary = featuredProjects.find((p) => p.tier === "primary");
-  const secondary = featuredProjects.find((p) => p.tier === "secondary");
 
   return (
     <section
@@ -37,14 +35,12 @@ export default function Projects() {
             Things I shipped
           </h2>
           <p className="mt-4 max-w-2xl text-lg leading-8 text-text-secondary">
-            Full-stack and frontend work alongside the quality engineering
-            focus.
+            Test automation and full-stack products, built end to end.
           </p>
         </Reveal>
 
         <div className="mt-14 space-y-10 lg:space-y-12">
-          {primary ? <PrimaryProject project={primary} /> : null}
-          {secondary ? <PrimaryProject project={secondary} /> : null}
+          {featuredProjects.map((project) => (<PrimaryProject key={project.title} project={project} />))}
         </div>
       </Container>
     </section>

@@ -154,13 +154,13 @@ export default function Hero() {
             className="mt-12 flex flex-wrap gap-x-8 gap-y-4 border-t border-bg-surface-raised/20 pt-6 font-mono text-[12px] text-bg-surface-raised/70"
           >
             <p>
-              <span className="text-accent-primary">50%</span> less manual QA
+              <span className="text-accent-primary">700+</span> test scenarios
             </p>
             <p>
-              <span className="text-accent-primary">10+</span> APIs automated
+              <span className="text-accent-primary">645</span> forms validated
             </p>
             <p>
-              <span className="text-accent-primary">900+</span> fields validated
+              <span className="text-accent-primary">167</span> learned mappings
             </p>
           </motion.div>
         </motion.div>
