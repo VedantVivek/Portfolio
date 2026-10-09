@@ -7,7 +7,7 @@ export const personalInfo = {
     "I build automated testing systems that catch defects before they reach production.",
 
   introduction:
-    "Software Quality Engineer at Zinnia, where I build Playwright + TypeScript automation for enterprise platforms: a framework that runs 700+ test scenarios from a single test plan, plus an LLM-powered self-healing layer that keeps tests working when the UI changes. I also build full-stack applications with Next.js and TypeScript.",
+    "Software Quality Engineer at Zinnia, where I build Playwright + TypeScript automation for enterprise platforms: a framework that executes 700+ Excel-driven scenarios across 4 domains, plus an LLM-assisted self-healing layer that keeps tests resilient to UI changes. I also build full-stack applications with Next.js and TypeScript.",
 
   about:
     "I've worked both sides of the release cycle — writing requirements as a BA, then proving they hold up as a QA engineer. That means I test with business context in mind, not just a checklist. What I enjoy most is designing a framework once and watching it validate hundreds of scenarios reliably.",
@@ -32,7 +32,7 @@ export const portfolioStats = [
   {
     value: 700,
     suffix: "+",
-    label: "Test scenarios from a single test plan",
+    label: "Excel-driven scenarios across 4 domains",
   },
   {
     value: 645,
@@ -67,10 +67,10 @@ export const experiences = [
       "AI-Assisted Testing",
     ],
     achievements: [
-      "Built a modular Playwright-TypeScript framework running 700+ test scenarios across 4 domains from a single test plan, integrated with Jenkins for on-demand execution.",
-      "Automated SAML-based SSO and multi-step API authentication workflows, validating end-to-end transaction status and document generation, eliminating manual verification steps.",
-      "Designed a rule-based field-mapping engine across 15+ domains with an LLM-powered self-healing fallback, capturing 167 learned mappings to improve resilience against UI changes.",
-      "Engineered automated spec-compliance validation across 645 generated carrier forms and 29 UAT transactions, auto-flagging discrepancies and publishing results via Allure and dashboards across 50+ runs.",
+      "Architected a modular Playwright-TypeScript framework executing 700+ Excel-driven scenarios across 4 domains, integrated with Jenkins for on-demand regression testing.",
+      "Automated SAML SSO, OAuth, and multi-step API authentication workflows, validating end-to-end transaction lifecycles, status updates, and document generation.",
+      "Designed a reusable rule-based field-mapping engine spanning 15+ domains with persistent learning and LLM-assisted self-healing fallback, accumulating 167 learned mappings to improve UI-change resilience.",
+      "Engineered automated spec-compliance validation across 645 generated forms and 29 UAT transactions, with discrepancy detection, field-level auditing and Allure/dashboard reporting across 50+ runs.",
     ],
   },
   {
@@ -81,7 +81,7 @@ export const experiences = [
     type: "Internship",
     technologies: ["SQL", "Postman", "REST APIs", "Apache JMeter"],
     achievements: [
-      "Partnered with business and product teams to translate strategic requirements into 8+ actionable product enhancements, cutting requirement ambiguity by aligning scope upfront.",
+      "Partnered with business and product teams to translate strategic requirements into 8+ actionable product enhancements, accelerating development readiness and cutting requirement ambiguity by aligning scope upfront.",
       "Drove cross-functional alignment with product owners and stakeholders across 3+ sprint releases, prioritizing initiatives against business goals and driving them to on-time delivery.",
       "Collaborated with QA to validate requirements across 15+ API endpoints using Postman and SQL, with Apache JMeter used for performance validation ahead of UAT.",
     ],
@@ -94,10 +94,10 @@ export const caseStudies = [
     title: "Playwright Test Framework",
     problem: null as string | null,
     action:
-      "Built a modular Playwright-TypeScript framework that runs 700+ test scenarios across 4 domains from a single test plan, integrated with Jenkins for on-demand execution.",
+      "Architected a modular Playwright-TypeScript framework executing 700+ Excel-driven scenarios across 4 domains, integrated with Jenkins for on-demand regression testing.",
     tech: ["Playwright", "TypeScript", "Jenkins"],
     resultValue: "700+",
-    resultLabel: "Test scenarios from a single test plan",
+    resultLabel: "Excel-driven scenarios across 4 domains",
     role: null as string | null,
   },
   {
@@ -105,7 +105,7 @@ export const caseStudies = [
     title: "Self-Healing Field Mapping",
     problem: null as string | null,
     action:
-      "Designed a rule-based field-mapping engine across 15+ domains with an LLM-powered self-healing fallback, so tests keep working when the UI changes.",
+      "Designed a reusable rule-based field-mapping engine spanning 15+ domains with persistent learning and LLM-assisted self-healing fallback to improve UI-change resilience.",
     tech: ["TypeScript", "Playwright", "LLM"],
     resultValue: "167",
     resultLabel: "Learned mappings captured",
@@ -116,7 +116,7 @@ export const caseStudies = [
     title: "Spec-Compliance Validation",
     problem: null as string | null,
     action:
-      "Engineered automated spec-compliance validation across 645 generated carrier forms and 29 UAT transactions, auto-flagging discrepancies and publishing results via Allure and dashboards across 50+ runs.",
+      "Engineered automated spec-compliance validation across 645 generated forms and 29 UAT transactions, with discrepancy detection, field-level auditing and Allure/dashboard reporting across 50+ runs.",
     tech: ["Playwright", "TypeScript", "Allure"],
     resultValue: "645",
     resultLabel: "Generated forms validated against spec",
@@ -146,6 +146,7 @@ export const skillCategories = [
       "UI Testing",
       "Regression Testing",
       "Data-Driven Testing",
+      "Page Object Model",
       "AI-Assisted Testing",
     ],
   },
@@ -170,6 +171,7 @@ export const skillCategories = [
       "Jenkins",
       "GitHub Actions",
       "CI/CD",
+      "Docker",
       "Allure",
       "JIRA",
       "Git/GitHub",
@@ -188,16 +190,17 @@ export const featuredProjects = [
     tier: "primary" as const,
     title: "LocalEstate Playwright Tests",
     tagline:
-      "A public Playwright + TypeScript test suite for my LocalEstate app, running in GitHub Actions CI.",
+      "A public Playwright + TypeScript test suite for my LocalEstate app, running in GitHub Actions CI and Docker.",
     category: "Test Automation",
     status: "Individual Project",
     description:
-      "24 UI and API tests with Page Objects, custom fixtures and shared test data, running on every push and pull request through GitHub Actions. While building it, I found 2 real bugs in the mortgage API and reported them as GitHub issues with repro steps and root cause.",
+      "24 UI and API tests with Page Objects, custom fixtures and shared test data, running on every push and pull request through GitHub Actions and in a Docker container. While building it, I found 2 real bugs in the mortgage API and reported them as GitHub issues with repro steps and root cause.",
     technologies: [
       "Playwright",
       "TypeScript",
       "GitHub Actions",
       "Page Object Model",
+      "Docker",
     ],
     github: "https://github.com/VedantVivek/localestate-playwright-tests",
     liveDemo: "",
@@ -205,13 +208,13 @@ export const featuredProjects = [
   },
   {
     tier: "primary" as const,
-    title: "Event Finder",
+    title: "Event Dazzle",
     tagline:
       "A full-stack event discovery platform with secure auth and end-to-end payment-integrated booking.",
     category: "Full-Stack Product",
     status: "Individual Project",
     description:
-      "A full-stack event discovery and ticket-booking platform that allows users to discover location-based events, authenticate securely, explore event details, and complete ticket payments through one connected experience.",
+      "A full-stack event booking platform integrating Ticketmaster, Bushdrum and Stripe APIs across 7 Indian cities, with 3-tier zone-based tickets, UPI payments and email OTP authentication.",
     technologies: ["Next.js", "TypeScript", "MongoDB", "Clerk", "Email OTP", "Stripe"],
     github: "https://github.com/VedantVivek/Event_Finder",
     liveDemo: "https://event-finder-dusky.vercel.app",
