@@ -117,7 +117,14 @@ export default function Hero() {
 
           <motion.p
             variants={item}
-            className="mt-6 max-w-xl text-[1.05rem] leading-8 text-bg-surface-raised/75"
+            className="mt-5 max-w-xl text-[0.95rem] leading-7 text-bg-surface-raised/80 sm:hidden"
+          >
+            {personalInfo.introductionShort}
+          </motion.p>
+
+          <motion.p
+            variants={item}
+            className="mt-6 hidden max-w-xl text-[1.05rem] leading-8 text-bg-surface-raised/75 sm:block"
           >
             {personalInfo.introduction}
           </motion.p>
