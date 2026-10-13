@@ -199,7 +199,7 @@ function ProjectVisual({
             : large
               ? isLandscape
                 ? "aspect-[16/10] sm:aspect-auto sm:h-[480px]"
-                : "h-[420px] sm:h-[480px]"
+                : isPhotoGallery ? "h-[420px] sm:h-[480px]" : "h-[300px] sm:h-[480px]"
               : "h-[300px] sm:h-[340px]"
         }`}
       >
