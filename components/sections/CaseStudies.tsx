@@ -9,7 +9,7 @@ import {
 } from "framer-motion";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import { ArrowUpRight, Wrench, Zap } from "lucide-react";
+import { Wrench, Zap } from "lucide-react";
 import Container from "@/components/ui/Container";
 import { caseStudies } from "@/data/portfolio";
 import {
@@ -401,7 +401,6 @@ function CaseCard({
             transition={{ duration: 0.4, delay: 0.2 }}
           >
             Evidence over claims
-            <ArrowUpRight size={15} strokeWidth={1.75} />
           </motion.div>
         </div>
       </div>
