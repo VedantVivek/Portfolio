@@ -50,7 +50,7 @@ export default function Projects() {
 function PrimaryProject({ project }: { project: Project }) {
   return (
     <article className="overflow-hidden border border-border-subtle bg-bg-surface-raised shadow-[var(--shadow-resting)]">
-      <div className="grid gap-0 lg:grid-cols-[1.4fr_1fr]">
+      <div className="grid grid-cols-1 gap-0 lg:grid-cols-[1.4fr_1fr]">
         <MediaReveal className="border-b border-border-subtle lg:border-b-0 lg:border-r">
           <ProjectVisual project={project} large />
         </MediaReveal>
@@ -165,6 +165,11 @@ function ProjectVisual({
   const current = images[activeImage];
   const isPhone = current.includes("mobile");
   const isPhotoGallery = project.title === "LocalEstate";
+  const isLandscape = [
+    "LocalEstate Playwright Tests",
+    "Nexora Requirements Assistant",
+    "Churnlens",
+  ].includes(project.title);
 
   return (
     <div
@@ -174,13 +179,13 @@ function ProjectVisual({
     >
       {!isPhone ? (
         <div className="flex items-center gap-2 border-b border-white/10 bg-[#1a1e24] px-3.5 py-2.5">
-          <span className="h-2.5 w-2.5 rounded-full bg-[#ff5f57]" />
-          <span className="h-2.5 w-2.5 rounded-full bg-[#febc2e]" />
-          <span className="h-2.5 w-2.5 rounded-full bg-[#28c840]" />
-          <span className="ml-3 truncate rounded-sm bg-white/8 px-3 py-1 font-mono text-[10px] tracking-wide text-white/45">
+          <span className="h-2.5 w-2.5 shrink-0 rounded-full bg-[#ff5f57]" />
+          <span className="h-2.5 w-2.5 shrink-0 rounded-full bg-[#febc2e]" />
+          <span className="h-2.5 w-2.5 shrink-0 rounded-full bg-[#28c840]" />
+          <span className="ml-3 hidden min-w-0 truncate rounded-sm sm:block bg-white/8 px-3 py-1 font-mono text-[10px] tracking-wide text-white/45">
             {project.title.toLowerCase().replace(/\s+/g, "")}.app
           </span>
-          <span className="ml-auto font-mono text-[10px] tracking-wide text-white/35">
+          <span className="ml-auto shrink-0 whitespace-nowrap font-mono text-[10px] tracking-wide text-white/35">
             {String(activeImage + 1).padStart(2, "0")} /{" "}
             {String(images.length).padStart(2, "0")}
           </span>
@@ -192,7 +197,9 @@ function ProjectVisual({
           isPhone
             ? "flex min-h-[380px] items-center justify-center bg-gradient-to-b from-[#12151a] to-[#0a0d12] px-6 py-8 sm:min-h-[420px]"
             : large
-              ? "h-[420px] sm:h-[480px]"
+              ? isLandscape
+                ? "aspect-[16/10] sm:aspect-auto sm:h-[480px]"
+                : "h-[420px] sm:h-[480px]"
               : "h-[300px] sm:h-[340px]"
         }`}
       >

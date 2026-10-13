@@ -7,7 +7,7 @@ export const personalInfo = {
     "I build automated and AI-assisted testing systems that catch defects before they reach production.",
 
   introduction:
-    "Software Quality Engineer at Zinnia, where I build Playwright + TypeScript automation for enterprise platforms: a framework that executes 700+ Excel-driven scenarios across 4 domains, plus an LLM-assisted self-healing layer that keeps tests resilient to UI changes. I run these suites through CI with Jenkins, GitHub Actions and Docker, and I build full-stack applications with Next.js and TypeScript.",
+    "Software Quality Engineer at Zinnia, building Playwright + TypeScript automation for enterprise platforms: 700+ Excel-driven scenarios across 4 domains, run through CI with Jenkins, GitHub Actions and Docker, plus an LLM-assisted self-healing layer that keeps tests resilient to UI changes. I also build full-stack apps with Next.js and TypeScript.",
 
   about:
     "I've worked both sides of the release cycle — writing requirements as a BA, then proving they hold up as an SDET. That means I test where the risk actually is, from APIs to UI flows, and I build frameworks that run in CI, report clearly and stay stable as the product changes. What I enjoy most is designing a framework once and watching it validate hundreds of scenarios reliably.",
